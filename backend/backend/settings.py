@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'trip',
+      # Added Jazzmin for admin interface
 ]
 
 MIDDLEWARE = [
@@ -126,6 +128,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Default primary key field type
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Transport System",
+    "site_header": "Transport System",
+    "site_brand": "Transport System",
+    "welcome_sign": "Welcome to the To Admin",
+    "copyright": "Transport System",
+    "search_model": "auth.User",
+}
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

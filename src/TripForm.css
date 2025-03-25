@@ -1,0 +1,22 @@
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  background-color: green;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  padding: 20px 40px ;
+  cursor: pointer;
+}

@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import About from './About';
+import Home from './Home';
+import Login from './Login';
+import Trips from './Trips';
+import TripForm from './TripForm';
+import Footer from './Footer'; // Import the Footer component
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        
+        <nav className="mb-7 App-header">
+          <ul className="nav justify-content-center">
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/about">About</Link>
+            </li>
+            
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/login">Login</Link>
+            </li>
+          </ul>
+          <h1 className="text-white font-weight-bold font-monospace text-center my-4">
+          CENTER OF LOGISTICS AND TRANSPORT MANAGEMENT
+        </h1>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/trips" element={<Trips />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/trip-form" element={<TripForm />} />
+        </Routes>
+
+        <Footer /> {/* Include the Footer component */}
+      </div>
+    </Router>
   );
 }
 

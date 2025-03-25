@@ -6,17 +6,20 @@
 .submit-button {
   background-color: green;
   color: white;
-  border: none;
+  border: 2px solid;
   margin-top: 20px;
   padding: 20px 40px;
   cursor: pointer;
+  border-radius: 9px;
+  
 }
 
 .logout-button {
   background-color: red;
   color: white;
-  border: none;
+  border: 2px solid;
   margin-top: 20px;
   padding: 20px 40px ;
   cursor: pointer;
+  border-radius: 9px;
 }

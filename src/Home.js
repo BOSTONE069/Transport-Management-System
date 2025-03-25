@@ -1,13 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Ensure you have react-router-dom installed for navigation
+import { Link } from 'react-router-dom';
 import home1 from './photos/home1.jpg';
 import home2 from './photos/home2.jpg';
 import home3 from './photos/home3.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const Home = () => {
   return (
     <div className="home-container">
-      <div id="carouselExample" className="carousel slide" data-ride="carousel">
+      <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src={home1} className="d-block w-100" alt="Home 1" />
@@ -40,14 +42,16 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <a className="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+
+        {/* Carousel Controls */}
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only">Next</span>
-        </a>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   );

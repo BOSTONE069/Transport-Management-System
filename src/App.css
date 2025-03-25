@@ -21,11 +21,13 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(242, 234, 234);
+  color: rgb(225, 13, 200);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
 .App-link {
-  color: #61dafb;
+  color: #06c809;
 }
 
 @keyframes App-logo-spin {

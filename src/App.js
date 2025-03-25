@@ -16,17 +16,17 @@ function App() {
         <nav className="mb-7 App-header">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/">Home</Link>
+              <Link className="nav-link" to="/">HOME</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/about">About</Link>
+              <Link className="nav-link " to="/about">ABOUT</Link>
             </li>
             
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/login">Login</Link>
+              <Link className="nav-link " to="/login">LOGIN</Link>
             </li>
           </ul>
-          <h1 className="text-white font-weight-bold font-monospace text-center my-4">
+          <h1 className="text-white font-weight-bold  text-center my-4">
           CENTER OF LOGISTICS AND TRANSPORT MANAGEMENT
         </h1>
         </nav>

@@ -84,10 +84,9 @@ function TripForm() {
               </div>
               <div className="row justify-content-end ">
                 <div className="form-group col-sm-6">
-<button type="submit" className="submit-button button-container">Submit</button>
-<br />
-<button onClick={() => navigate('/login')} className="logout-button button-container" >Logout</button>
-
+                <button type="submit" className="submit-button button-container">Submit</button>
+                <br />
+                <button onClick={() => navigate('/login')} className="logout-button button-container" >Logout</button>
                 </div>
               </div>
             </form>

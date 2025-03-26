@@ -5,7 +5,6 @@ import TripForm from './TripForm';
 function Trips() {
   return (
     <div>
-      <h1>TRANSPORT MANAGEMENT SYSTEMS</h1>
       <TripForm />
     </div>
   );
